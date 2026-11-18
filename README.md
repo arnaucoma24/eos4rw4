@@ -2,7 +2,8 @@
 
 Encodes a molecule as 512 continuous descriptors taken from the bottleneck of a translation network. Winter and colleagues trained a recurrent encoder-decoder to rewrite a randomised SMILES as the canonical SMILES of the same structure, forcing the latent vector to carry the molecule rather than the string, and pre-trained it on roughly 72 million compounds merged from ZINC and PubChem. Ersilia serves the ONNX port of the encoder. Molecules it cannot embed (invalid SMILES, non-organic, very small or very large compounds) return empty values.
 
-This model was incorporated on 2025-11-29.Last packaged on 2026-10-15.
+This model was incorporated on 2025-11-29.
+Last packaged on 2026-10-15.
 
 ## Information
 ### Identifiers
@@ -46,6 +47,7 @@ _10 of 512 columns are shown_
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos4rw4](https://hub.docker.com/r/ersiliaos/eos4rw4)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4rw4.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4rw4.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos4rw4_v2.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos4rw4_v2.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `1413`
